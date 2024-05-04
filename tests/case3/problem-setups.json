@@ -1,6 +1,5 @@
 {
     "case name": "wide core GW170817",
-
     "synchrotron": true,
     "self-absorption": true,
     "inverse compton cooling": true,
@@ -8,24 +7,25 @@
     "Klein-Nishina": false,
     "reverse shock": false,
     "jet spreading": false,
-
     "unit": "cgs",
-    
     "E_iso": 2.5e+52,
-    "luminosity distance": 1.23e26,
-    "redshift": 0.009,
-
+    "luminosity distance": 1.23e+26,
+    "z": 0.009,
     "jet type": "Gaussian",
     "theta_core": 0.176,
     "theta_wing": 0.6,
     "Gamma0": 300,
-    
     "n_ism": 0.0199526231496888,
     "epsilon_e": 0.01,
     "epsilon_B": 0.00019952623149688788,
     "p": 2.139,
-
     "theta_view": 0.54,
-    "t_obs": [8.64e3,8.64e8],
-    "band pass (kev)": [0.3,10]
+    "t_obs": [
+        8.64e3,
+        8.64e8
+    ],
+    "band pass (kev)": [
+        0.3,
+        10
+    ]
 }
