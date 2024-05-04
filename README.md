@@ -10,6 +10,68 @@ This repository hosts a code comparison project aimed at comparing the results o
     - **Your_Working_Folder**: Contributors should create a working folder at the same level as `problem-setups.json`, with a name of their choice.
       - **flux.csv**: Comma-separated value file storing the output flux as a function of time. The first column represents time in seconds, and the second column represents flux in erg/cm^2/s.
 
+## Problem Setups Explanation
+
+The `problem-setups.json` file provides the necessary model parameters for afterglow light curve calculation. Here's an example of the JSON structure and its explanation:
+
+```json
+{
+    "case name": "narrow core GW170817",
+    "synchrotron": true,
+    "self-absorption": true,
+    "inverse compton cooling": true,
+    "synchrotron self-compton": false,
+    "Klein-Nishina": false,
+    "reverse shock": false,
+    "jet spreading": false,
+    "unit": "cgs",
+    "E_iso": 4.0e+53,
+    "luminosity distance": 1.23e+26,
+    "z": 0.009,
+    "jet type": "Gaussian",
+    "theta_core": 0.044,
+    "theta_wing": 0.6,
+    "Gamma0": 300,
+    "n_ism": 0.0199526231496888,
+    "epsilon_e": 0.01,
+    "epsilon_B": 0.00019952623149688788,
+    "p": 2.139,
+    "theta_view": 0.54,
+    "t_obs": [
+        8.64e3,
+        8.64e8
+    ],
+    "band pass (kev)": [
+        0.3,
+        10
+    ]
+}
+```
+
+- **case name**: Name of the test case.
+- **synchrotron**: Boolean indicating whether synchrotron radiation is considered.
+- **self-absorption**: Boolean indicating whether self-absorption is considered.
+- **inverse compton cooling**: Boolean indicating whether inverse Compton cooling is considered.
+- **synchrotron self-compton**: Boolean indicating whether synchrotron self-Compton scattering is considered.
+- **Klein-Nishina**: Boolean indicating whether Klein-Nishina correction is considered.
+- **reverse shock**: Boolean indicating whether reverse shock is considered.
+- **jet spreading**: Boolean indicating whether jet spreading is considered.
+- **unit**: Unit system used for the parameters.
+- **E_iso**: Isotropic equivalent energy in erg.
+- **luminosity distance**: Luminosity distance in cm.
+- **z**: Redshift.
+- **jet type**: Type of the jet.
+- **theta_core**: Half-opening angle of the jet core in radians.
+- **theta_wing**: Half-opening angle of the jet wing in radians.
+- **Gamma0**: Initial Lorentz factor of the jet.
+- **n_ism**: Number density of the interstellar medium (ISM) in cm^(-3).
+- **epsilon_e**: Fraction of the shock energy given to the electrons.
+- **epsilon_B**: Fraction of the shock energy given to the magnetic field.
+- **p**: Electron energy distribution index.
+- **theta_view**: Viewing angle of the observer in radians.
+- **t_obs**: Observation times in seconds [start, end].
+- **band pass (kev)**: Energy bandpass in keV. [low, high]
+
 ## Running Your Code
 
 Contributors can run their code based on the provided `problem-setups.json` file for each test case. After running their code, ensure that the results are saved in a `flux.csv` file within your working folder. It's important to maintain this directory structure to facilitate comparison.
@@ -21,3 +83,4 @@ Contributors who have run their code and obtained output data can submit pull re
 ## Plotting Comparison
 
 To visualize and compare the results, you can use the `plot.ipynb` Jupyter Notebook provided in the repository. This notebook facilitates plotting the flux as a function of time for different code implementations, allowing for easy comparison.
+
