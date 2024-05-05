@@ -74,11 +74,11 @@ The `problem-setups.json` file provides the necessary model parameters for after
 
 ## Running Your Code
 
-Welcome, contributors! To run your code, please use the `problem-setups.json` file provided for each test case. After your code executes, save the results in a `flux.csv` file within your working folder. This helps maintain a consistent directory structure for easy comparison using `plot.ipynb`.
+Welcome, contributors! Please first [fork](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) this git repository and create your own working directory under each 'test case' folder with the name of your code. To run your code, please use the `problem-setups.json` file provided for each test case. After your code executes, save the results in a `flux.csv` file within your working folder. This helps maintain a consistent directory structure for easy comparison using `plot.ipynb`.
 
 ## Contributing
 
-If you've completed your simulations and have output data, please submit a pull request with your `flux.csv` files. Ensure your files are saved in the designated working folder as outlined. Your contributions help enhance our project and facilitate easy result comparisons.
+If you've completed your simulations and have output data, please commit the results to your forked git repository with your `flux.csv` files and then submit a [pull request](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) to this upstream repository. Ensure your files are saved in the designated working folder as outlined. Your contributions help enhance our project and facilitate easy result comparisons.
 
 ## Plotting Comparison
 
