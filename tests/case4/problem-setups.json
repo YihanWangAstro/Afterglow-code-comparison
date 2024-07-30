@@ -2,7 +2,7 @@
     "case name": "small viewing angle GW170817",
     "synchrotron": true,
     "self-absorption": true,
-    "inverse compton cooling": true,
+    "inverse compton cooling": false,
     "synchrotron self-compton": false,
     "Klein-Nishina": false,
     "reverse shock": false,
